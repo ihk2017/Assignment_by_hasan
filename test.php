@@ -13,3 +13,5 @@ $fahrenheit = celsius_to_fahrenheit($celsius);
 
 // Display the result
 echo "Temperature in Fahrenheit: " . $fahrenheit;
+
+echo "dsjhfdsjkfjkdsjfkds";
