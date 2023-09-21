@@ -219,12 +219,19 @@ function square($n) {
 }
 $numbers = array(1, 2, 3, 4);
 $squaredNumbers = array_map('square', $numbers);
-print_r($squaredNumbers);*/
+print_r($squaredNumbers);
 
 for ($i = 1; $i <= 50; $i++) {
     if ($i % 5 === 0) {
     continue; // Skip multiples of 5
     }
     echo $i . " ";
-    }
+    }*/
     
+    
+    function greet($name) {
+        echo "Hello, $name!". " Nice to meet you.";
+    }
+
+    $name = "Alice";
+    greet($name);

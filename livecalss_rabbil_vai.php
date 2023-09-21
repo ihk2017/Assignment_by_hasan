@@ -1,4 +1,5 @@
-<?php
+ <?php
+/*
 You can create an indexed array using the array() function or the short array syntax [].
 
 // How to create
@@ -555,11 +556,6 @@ print_r($evenNumbers);
 
 
 
-===============================
-
-Other Functions
-
-
 #compact(): Creates an array containing variables and their values.
 
 $name = "Alice";
@@ -594,4 +590,6 @@ print_r($result);
 
 // Negative length will pad to the left
 $result2 = array_pad($input, -5, -1);
-print_r($result2);
+print_r($result2); -->
+
+*/
