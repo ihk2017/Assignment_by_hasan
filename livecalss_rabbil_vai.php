@@ -592,5 +592,8 @@ print_r($result);
 $result2 = array_pad($input, -5, -1);
 print_r($result2); -->
 
+
+//Use the correct array method to sort the $age array according to the values.
+
 */
-echo "made changes";
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
