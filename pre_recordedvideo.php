@@ -101,5 +101,58 @@
 //   echo "Key=" . $x . ", Value=" . $x_value. "\n";
 // }
 
-$today = date('l');
-echo "Today is: " . $today;
+
+//$fruits = ['apple'=>'green', 'banana'=>'yellow', 'cherry'=>'radish'];
+// $fruits[] = 'orange'; // Adds 'orange' to the end of the array
+// $fruits[] = 'banana';
+// array_push($fruits, 'guava','grape'); // Adds 'grape' to the end of the array
+//unset($fruits['cherry']); // Removes the element at index 1 ('banana')
+//array_shift($fruits);
+//$fruits = ['apple', 'banana', 'cherry'];
+//$fruits[5] = 'kiwi'; // Modifies 'banana' to 'kiwi'
+
+//print_r($fruits) ;
+
+/// $numbers = [10, 20, 30, 40, 50];
+
+// Displaying array elements using a loop
+// foreach ($numbers as $number) {
+//     echo $number . " ";
+// }
+// Output: 10 20 30 40 50
+
+
+// $num= [1,2,3,4,5,66,55,44,33];
+
+// foreach($num as $numbers){
+//     echo $numbers. "\n";
+// }
+
+//  $products = [
+//      ['ProductID' => 1, 'Name' => 'Laptop', 'Price' => 800],
+//      ['ProductID' => 2, 'Name' => 'Smartphone', 'Price' => 400],
+//      ['ProductID' => 3, 'Name' => 'Tablet', 'Price' => 300]
+//  ];
+
+//  echo $products[1]['Name'] ;// Output: Smartphone
+
+//$colors = ['red', 'green', 'blue'];
+
+// Removing the first element ('red')
+//array_pop($colors);
+//$res=array_slice($colors,2,2);
+
+// $fruits1 = ['apple', 'banana'];
+// $fruits2 = ['cherry', 'orange'];
+
+// $res= array_merge($fruits1,$fruits2);
+//  print_r($res);
+
+
+$ages = [
+       'Alice' => 25,
+       'Bob' => 30,
+        'Charlie' => 20
+    ];
+    krsort($ages);
+print_r($ages);
