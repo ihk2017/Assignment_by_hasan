@@ -13,13 +13,18 @@ Print the modified text.
 */
 
 
-function convertString($text) {
-    $lowerText = strtolower($text); 
-    $converText = str_replace("brown", "red", $lowerText);
-    return $converText;
-}
-$text = "The quick brown fox jumps over the lazy dog.";
-$result = convertString($text);
+// function convertString($text) {
+//     $lowerText = strtolower($text); 
+//     $converText = str_replace("brown", "red", $lowerText);
+//     return $converText;
+// }
+// $text = "The quick brown fox jumps over the lazy dog.";
+// $result = convertString($text);
 
-echo $result;
+// echo $result;
 
+#include <stdio.h>
+#include <string.h>
+$fruits = ['apple', 'banana', 'cherry'];
+$fruits[] = 'orange','jhhjhjkh';
+print_r($fruits);
