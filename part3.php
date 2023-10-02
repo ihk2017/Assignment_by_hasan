@@ -44,7 +44,21 @@ $myCar->AddTwoNum();
 
 */
 
+class Calculate{
+    public $x;
+    public $y;
 
+    public function __construct($xV,$yV){
+        $this->x=$xV;
+        $this->y=$yV;
+    }
+    public function addN($a,$b){
+        //echo $this->x+$this->y;
+        echo $a+$b;
+    }
+}
+$result=new Calculate(2,2);
+$result->addN(5,5);
 //========================================================================
 
 /*

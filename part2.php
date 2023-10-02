@@ -11,8 +11,17 @@ class Car {
     public function __construct() {
         $num1=10;
         $num2=20;
-        echo $num1+$num2;
+        echo $num1+$num2. "\n";
     }
 }
 
 $myCar = new Car();
+
+class Calculate{
+    public function __construct(){
+        $n1=10;
+        $n2=20;
+        echo $n1+$n2;
+    }
+}
+$result=new Car();
