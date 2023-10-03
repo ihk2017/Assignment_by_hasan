@@ -3,7 +3,7 @@ class Product {
     // Properties
     public $id;
     public $name;
-    public $price;
+    private $price;
 
     public function __construct(int $id, string $name, float $price) {
         $this->id = $id;
