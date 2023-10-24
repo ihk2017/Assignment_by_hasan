@@ -17,10 +17,7 @@ include 'app_manage/header.php';
         <div class="col-md-10 text-center bodyarea relative">
             <h1 class="wc" >Registration successfully Completed!<br/><br/> <a href="registration.php"><h4>Back to Registration</h4> </a>
             </h1> 
-            <!-- <?php 
-                $data = file_get_contents("./users.txt");
-                echo nl2br($data);
-            ?>  -->
+            
         </div>
         
     </div>

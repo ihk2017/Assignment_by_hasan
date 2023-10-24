@@ -1,16 +1,29 @@
+
 <?php
+session_start();
 include 'app_manage/header.php';
 ?>
+
 <body>
     <div class="container-fluid shadow indexreg text-center ">
         <h3 class="mt-5" >User Authentication and Role Management System</h3>
     </div>
-<div class="container-fluid text-center">
-    <h1>User Dashboard !</h1>
-    <p><a href="login.php">Back to Login Page</a></p>
+<div class="container-fluid">
+    <div class="row">
+        <?php
+            include 'app_manage/menu.php';
+        ?>
+ 
+        <div class="col-md-10 text-center bodyarea relative">
+            <h1 class="wc" >User Dashboard !<br/><br/> <a href="login.php"><h4>Back to Login Page</h4> </a>
+            </h1> 
+            
+        </div>
+        
+    </div>
 </div>
-
 
 <?php
 include 'app_manage/footer.php';
 ?>
+ 

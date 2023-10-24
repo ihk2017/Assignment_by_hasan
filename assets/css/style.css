@@ -5,13 +5,13 @@
 }
 .grids{
     height: 250px;
-    background-color: black;
+    background-color: rgb(10, 84, 114);
     color: aliceblue;
     margin-top: 100px;
 }
 .reg{
     height: 360px;
-    background-color: #AAB7B8;
+    background-color: rgb(10, 84, 114);
     border-radius: 20px 20px 20px 20px;
 }   
 .indexreg{
