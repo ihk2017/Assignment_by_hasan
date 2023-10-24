@@ -1,0 +1,10 @@
+admin,admin@gmail.com,$2y$10$1BRVhC76cJKQlrG1S.xfQOqAtgHTqhdLNC6X4cZjjXPgg7CW0w3Cu
+manager,manager@gmail.com,$2y$10$F3JuI.ETxUzyvGssqENyo.zUT6YiMrhe56sIWIX51VrTfdmRry/wy
+user,user@gmail.com,$2y$10$cQOTmNx/9cOnDziju49YweqJv5BeUZJQ6Fm74I2Lo6TPxJ2Sk584q
+rakib,rakib@gmail.com,$2y$10$zqEZS9o7Z/Ht697VtBWLmubRKsIXARDGWsie02BW59dEFvnA/ZnUm
+admin@gmail.com,rakib@gmail.com,$2y$10$7JwBzDQKzn5z3rjk8D0XJOIvmU0aZ.QRaJrcZ0qtNAfacybQ0EX.6
+rakib,rakib@gmail.com,$2y$10$aNAUDLTBaGvnLSoFqVus7OPPZhKiK/MwC5zPotiFkBW/GMbA281YG
+erretytjkkj,dfgfdk@gjgjjg.com,$2y$10$CasR.xCnM3VNLss.mDVUqeAWxjMsoJo67MginXcHINNo7hTPXilDC
+erretytjkkj,admin@gmail.com,$2y$10$vCYZIQRYJUZp/kPsgqL/GusbvCl7NjRCEQOu.12rp6uNNIDTvQHI2
+erretytjkkj,hasan.idb7@gmail.com,$2y$10$3I4sdtoeCPTSIk2EwkLRneOKC6cRS3l9T5uV1LkbIk7JV6e7GypUq
+erretytjkkj,john@doe.com,$2y$10$6.XxiXfDFqFjdRULxm9xIuWjHm5sfCc09A8h7utVpOAvOJfL0k/Om
