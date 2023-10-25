@@ -42,7 +42,7 @@ include 'app_manage/header.php';
                         <hr>
                         <form method="post" action="role_delete_process.php">
         
-                            <input type="submit" value="Delete">
+                            <input type="submit" value="Delete"><br/>
                             <?php 
                             $data = file_get_contents("./role_create.txt");
                             echo nl2br($data);
