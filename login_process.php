@@ -21,6 +21,9 @@ if ($email == 'admin@gmail.com' && $password == '12345') {
     header('Location: dashboard_user.php');
 } else if ($email != '' || $password != '') {
     $errorMessage = 'eamil or password is blank !';
+}else if ($email != 'admin@gmail.com' ||$email != 'manager@gmail.com'||$email != 'user@gmail.com') {
+    echo 'email does not matchs';
+    header('Location: login.php');
 }else{
     echo 'Invalid email or password ';
 }

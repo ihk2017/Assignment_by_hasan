@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_put_contents("role_create.txt", $roleData, FILE_APPEND);
 
     $_SESSION["username"] = $username; // Set the session
-    header("Location: role_management.php");
+    header("Location: role_create_confirm.php");
 } else {
     echo "Invalid request!";
 }

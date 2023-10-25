@@ -1,3 +1,1 @@
- Admin
- Manager
- User
+Admin

@@ -36,7 +36,7 @@ include 'app_manage/header.php';
                           </div>
                           <div class="col-md-12 text-center mb-4"><input type="submit" value="Login"></div>
                           <div class="userguide text-light bg-dark ">
-                              Login guide : <br/>
+                              Login info : <br/>
                               user id : admin@gmail.com password : 12345<br/>
                               user id : manager@gmail.com password : 12345<br/>
                               user id : user@gmail.com password : 12345
