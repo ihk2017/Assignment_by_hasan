@@ -16,7 +16,7 @@ include 'app_manage/header.php';
                 <div class="row mt-5">
                     <div class="col-md-2"></div>
                     <div class="col-md-6 roleman ">
-                        <h2>Role Management Page!</h2>
+                        <h2 style="color:yellow" >Role Management Page!</h2>
                         <hr>
                         <form method="post" action="role_create_process.php">
                            <div class="row">
