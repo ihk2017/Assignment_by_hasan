@@ -6,7 +6,9 @@ $password = $_POST['password'] ??'';
 
 $errorMessage = '';
 
-//if(isset($_SESSION['username']))
+if(!isset($_SESSION['username'])){
+    header('Location: login.php');
+}
 
 if ($email == 'admin@gmail.com' && $password == '12345') {
     $_SESSION['username'] = 'admin';

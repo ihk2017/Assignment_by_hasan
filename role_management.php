@@ -14,7 +14,7 @@ include 'app_manage/header.php';
         <div class="col-md-10 text-center bodyarea relative">
             <div class="container-fluid">
                 <div class="row mt-5">
-                    <div class="col-md-3"></div>
+                    <div class="col-md-2"></div>
                     <div class="col-md-6 roleman ">
                         <h2>Role Management Page!</h2>
                         <hr>
@@ -85,12 +85,36 @@ include 'app_manage/header.php';
                         </div>
                       
                     </div>
-                    <div class="col-md-3 shadow">
+                    <div class="col-md-4 bg-info shadow text-start">
                         <h4>Created Roles list :</h4>
                     <?php 
-                            $data = file_get_contents("./role_create.txt");
-                            echo nl2br($data);
-                        ?>
+                        // $data = file_get_contents("./role_create.txt");
+                        // echo nl2br($data);
+                    ?>
+
+                    <?php
+                    $text = file_get_contents("./role_create.txt");
+                    //"This is some text.\nThis is on a new line.\nAnd another line.";
+
+                    // Split the text into lines
+                    $lines = explode("\n", $text);
+
+                    // Initialize a counter for serial numbers
+                    $serialNumber = 1;
+
+                    // Iterate through the lines, adding serial numbers
+                    $serialText = "";
+                    foreach ($lines as $line) {
+                        $serialText .= $serialNumber . ". " . $line . "<br>";
+                        $serialNumber++;
+                    }
+
+                    // Convert newline characters to HTML line breaks
+                    $convertedText = nl2br($serialText);
+
+                    echo $convertedText;
+                    ?>
+
                     </div>
                 </div>
             </div>

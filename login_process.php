@@ -6,7 +6,7 @@ $password = $_POST['password'] ??'';
 
 $errorMessage = '';
 
-// if(isset($_SESSION['username'])){
+// if(isset($_SESSION['username'])){z
 //     header('Location: index.php');
 // }
 

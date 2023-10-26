@@ -4,7 +4,7 @@
             <hr>
 
            </div> 
-           <div class="menus text-start">
+           <div class="menus text-end">
                 <h6><a href="index.php">Home</a></h6>
                 <h6><a href="registration.php">Registration</a></h6>
                 <h6><a href="login.php">Login</a</h6><br/><br/>
