@@ -15,10 +15,39 @@ include 'app_manage/header.php';
         ?>
  
         <div class="col-md-10 text-center bodyarea relative">
-            <h1 class="wc" >Registration successfully Completed!<br/><br/> <a href="registration.php"><h4>Back to Registration</h4> </a>
-            </h1> 
+            <h1 class="" >Registration successfully Completed!<br/> <a href="registration.php"><h4>Back to Registration</h4> </a>
+            </h1> <br/>
+            <h5 class="text-center">Registered Users List: </h5>
+            <p>Sequences as : User Name > User Email > Password</p>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-11">
+            <div class="userlist text-right" style="text-align: left;" >
+            <?php
+                $text = file_get_contents("./users.txt");
+                $lines = explode("\n", $text);
             
+                    $serialNumber = 1;
+            
+                $serialText = "";
+                foreach ($lines as $line) {
+                    $serialText .=  $line . "<br>";
+                    $serialNumber++;
+                }
+            
+                // Convert newline characters to HTML line breaks
+                $convertedText = nl2br($serialText);
+            
+                echo $convertedText;
+            ?>
+            </div>
+            </div>
         </div>
+            
+            
+           
+        </div>
+        
         
     </div>
 </div>

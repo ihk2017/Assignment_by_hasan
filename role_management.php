@@ -1,5 +1,34 @@
 
 <?php
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    session_start();
+    $email="admin@gmail.com";
+    $StringData = $data;
+    $PHPAsocArray = json_decode($StringData, true);  
+
+
+    $inputUsername =$PHPAsocArray['username'];
+    $inputPassword =$PHPAsocArray['password'];  
+
+    foreach ($users as $user) {
+        if ($user['username'] == $email) { 
+
+            $_SESSION['loggedin'] = true;
+            $_SESSION['username'] = $user['username'];
+          //  $_SESSION['role'] = $user['role'];
+
+            echo "Logged in successfully!";
+            exit; 
+        }
+    }
+
+    echo "Invalid username or password.";
+}
+
+
 include 'app_manage/header.php';
 ?>
 <body>
@@ -19,21 +48,14 @@ include 'app_manage/header.php';
                         <h2 style="color:yellow" >Role Management Page!</h2>
                         <hr>
                         <form method="post" action="role_create_process.php">
-                           <div class="row">
-                                
+                            <div class="row">
                                 <div class="col-md-10 text-center">
-                                   Create New Role <input type="text"  name="new_role" required>
+                                    Create New Role <input type="text"  name="new_role" required>
                                     <input type="submit" class="btn-info" value="Create">
                                 </div>
                                 <div class="col-md-2"></div>
-                           </div> 
-                           
-                           
-                            
-                            
+                            </div> 
                         </form>
-                    
-                       
                         <hr>
                         <form method="post" action="role_edit_process.php">
                        
@@ -79,33 +101,25 @@ include 'app_manage/header.php';
 
                         ?>
                         </form>
+                        
                         <div class="nev mt-3 mb-2 bg-light">
                             <a href="registration.php">New User!</a>
                             <a href="index.php">Home!</a>
+                            <button class="btn-dark"><a href="login.php">Logout</a></button>
                         </div>
                       
                     </div>
                     <div class="col-md-4 bg-info shadow text-start">
                         <h4>Created Roles list :</h4>
-                    <?php 
-                        // $data = file_get_contents("./role_create.txt");
-                        // echo nl2br($data);
-                    ?>
-
                     <?php
                     $text = file_get_contents("./role_create.txt");
-                    //"This is some text.\nThis is on a new line.\nAnd another line.";
-
-                    // Split the text into lines
                     $lines = explode("\n", $text);
 
-                    // Initialize a counter for serial numbers
-                    $serialNumber = 1;
+                     $serialNumber = 1;
 
-                    // Iterate through the lines, adding serial numbers
                     $serialText = "";
                     foreach ($lines as $line) {
-                        $serialText .= $serialNumber . ". " . $line . "<br>";
+                        $serialText .=  $line . "<br>";
                         $serialNumber++;
                     }
 
@@ -125,4 +139,5 @@ include 'app_manage/header.php';
 
 <?php
 include 'app_manage/footer.php';
+
 ?>
