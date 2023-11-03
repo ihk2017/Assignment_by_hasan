@@ -1,0 +1,3 @@
+admin,admin@gmail.com,$2y$10$1BRVhC76cJKQlrG1S.xfQOqAtgHTqhdLNC6X4cZjjXPgg7CW0w3Cu
+manager,manager@gmail.com,$2y$10$F3JuI.ETxUzyvGssqENyo.zUT6YiMrhe56sIWIX51VrTfdmRry/wy
+user,user@gmail.com,$2y$10$cQOTmNx/9cOnDziju49YweqJv5BeUZJQ6Fm74I2Lo6TPxJ2Sk584q
